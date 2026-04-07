@@ -283,7 +283,7 @@
 <div class="abs-entry" id="nems-27">
   <p class="abs-entry-title">Paper 27 — A No-Free-Bits Calculus for Determinacy and Outsourcing</p>
   <p class="abs-descriptor">Closure audits for theories: a no-free-bits calculus measuring internal determinacy and outsourcing.</p>
-  <p class='abs-text'>Theory-closure and audit toolkit for “no free bits”: observational semantics, world-types, selectors, parameterized internality, and <strong>audit soundness</strong> (decidable-on-world-type ⇒ invariant; contrapositive: non-invariant ⇒ not decidable on world-types). The paper distinguishes two equivalent selector presentations: <strong>quotient selectors</strong> (sections <code>q : WType → World</code> of the quotient map) and <strong>world-selectors</strong> (endomaps <code>sel : World → World</code> satisfying invariance, idempotence, class-canonicality). <strong>New (§4.3): Selector–Quotient Splitting Equivalence</strong> — proves these two notions are in canonical bijection (<code>selectorSectionEquiv</code>): every world-selector factors through a unique quotient selector (<code>selector_quotient_splitting</code>, <code>selector_equiv_section</code>), and every quotient selector induces a world-selector (<code>quotientSectionToSelector</code>, <code>section_defines_selector_general</code>). This identifies the exact mathematical content of the selector abstraction: a world-selector is precisely a right inverse of the world-type quotient projection. The substantive closure question is therefore not whether selectors classify world-types (they do) but whether the corresponding quotient section is internally realizable. <strong>SPEC_68 (complete):</strong> The halting-framework bridge proves no computable quotient section exists under ASR and unbounded world-types (<code>QuotientSectionBridge</code>, <code>halting_framework_no_computable_section</code>). <strong>SPEC_69 (summit):</strong> <code>QuotientSectionStrength</code> proves no computable decider exists for any nontrivial extensional predicate on the halting framework (<code>halting_framework_no_decider_at_computable</code>). <strong>Canonicalization</strong>, <strong>EffectiveSemantics</strong>, and <strong>BoundedCover</strong> lead to a <strong>nailed instance</strong>: under bounded cover and canonicalization, a selector exists; with <code>DecidableEq WorldType</code>, a <strong>total bounded-search selector</strong> is built without Choice. <strong>FintypeWorld</strong> shows finite worlds + decidable observational equivalence ⇒ selector. The A0 bridge (internal representability ⇒ SRI′) connects Closure to SelfReference so MFP-1 and the diagonal barrier apply. Zero sorrys, zero custom axioms.</p>
+  <p class='abs-text'>Theory-closure and audit toolkit for “no free bits”: observational semantics, world-types, selectors, parameterized internality, and <strong>audit soundness</strong> (decidable-on-world-type ⇒ invariant; contrapositive: non-invariant ⇒ not decidable on world-types). The paper distinguishes two equivalent selector presentations: <strong>quotient selectors</strong> (sections <code>q : WType → World</code> of the quotient map) and <strong>world-selectors</strong> (endomaps <code>sel : World → World</code> satisfying invariance, idempotence, class-canonicality). <strong>New (§4.3): Selector–Quotient Splitting Equivalence</strong> — proves these two notions are in canonical bijection (<code>selectorSectionEquiv</code>): every world-selector factors through a unique quotient selector (<code>selector_quotient_splitting</code>, <code>selector_equiv_section</code>), and every quotient selector induces a world-selector (<code>quotientSectionToSelector</code>, <code>section_defines_selector_general</code>). This identifies the exact mathematical content of the selector abstraction: a world-selector is precisely a right inverse of the world-type quotient projection. The substantive closure question is therefore not whether selectors classify world-types (they do) but whether the corresponding quotient section is internally realizable. <strong>Negative instance:</strong> The halting-framework bridge proves no computable quotient section exists under ASR and unbounded world-types (<code>QuotientSectionBridge</code>, <code>halting_framework_no_computable_section</code>). <strong>Full barrier:</strong> <code>QuotientSectionStrength</code> proves no computable decider exists for any nontrivial extensional predicate on the halting framework (<code>halting_framework_no_decider_at_computable</code>). <strong>Canonicalization</strong>, <strong>EffectiveSemantics</strong>, and <strong>BoundedCover</strong> lead to a <strong>nailed instance</strong>: under bounded cover and canonicalization, a selector exists; with <code>DecidableEq WorldType</code>, a <strong>total bounded-search selector</strong> is built without Choice. <strong>FintypeWorld</strong> shows finite worlds + decidable observational equivalence ⇒ selector. The A0 bridge (internal representability ⇒ SRI′) connects Closure to SelfReference so MFP-1 and the diagonal barrier apply. Zero sorrys, zero custom axioms.</p>
   <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19429769">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
@@ -299,7 +299,7 @@
 <div class="abs-entry" id="nems-29">
   <p class="abs-entry-title">Paper 29 — Selector Strength and Completion Hierarchies</p>
   <p class="abs-descriptor">A poset of internal determinacy, barriers, and escape costs.</p>
-  <p class='abs-text'>Formalizes <strong>selector strength</strong> as a preorder (selector-strength lattice) of realizability classes and proves the <strong>barrier theorem family</strong>: under anti-decider closure and a fixed-point premise (hFP) at a strength level, <em>no total decider exists at that strength</em> for any nontrivial extensional predicate. Reflection supplies hFP when the representability class R is diagonally closed; Closure supplies the selector-at-strength vocabulary. Monotonicity; instances: trivial “all functions” (S_all) and a template for computable-on-ℕ (parametric hFP). Maps the hierarchy to NEMS IIa/IIb. A concrete quotient-section barrier is mechanized in <code>QuotientSectionBridge</code> (SPEC_68): under ASR and unbounded world-types, no computably realizable quotient section exists; the halting-framework bridge uses Mathlib&#x27;s <code>Nat.Partrec.Code</code> with no custom axioms. <strong>SPEC_69 (selector-strength lattice, summit):</strong> <code>QuotientSectionStrength</code> proves the fully instantiated computable barrier: on the halting framework, no computable δ decides any nontrivial extensional predicate (e.g. halts on 0); composes <code>nems_rt_no_computable_bool_decider</code> with <code>Nat.Partrec.Code.fixed_point</code>. Lean: no_total_decider_at_strength, reflection_supplies_hFP, decidableAt_mono, S_all, no_total_decider_nat, halting_framework_no_decider_at_computable; zero sorry, zero custom axioms.</p>
+  <p class='abs-text'>Formalizes <strong>selector strength</strong> as a preorder (selector-strength lattice) of realizability classes and proves the <strong>barrier theorem family</strong>: under anti-decider closure and a fixed-point premise (hFP) at a strength level, <em>no total decider exists at that strength</em> for any nontrivial extensional predicate. Reflection supplies hFP when the representability class R is diagonally closed; Closure supplies the selector-at-strength vocabulary. Monotonicity; instances: trivial “all functions” (S_all) and a template for computable-on-ℕ (parametric hFP). Maps the hierarchy to NEMS IIa/IIb. A concrete quotient-section barrier is mechanized in <code>QuotientSectionBridge</code>: under ASR and unbounded world-types, no computably realizable quotient section exists; the halting-framework bridge uses Mathlib&#x27;s <code>Nat.Partrec.Code</code> with no custom axioms. <strong>Fully instantiated computable barrier</strong> (<code>QuotientSectionStrength</code>): on the halting framework, no computable δ decides any nontrivial extensional predicate (e.g. halts on 0); composes <code>nems_rt_no_computable_bool_decider</code> with <code>Nat.Partrec.Code.fixed_point</code>. Lean: no_total_decider_at_strength, reflection_supplies_hFP, decidableAt_mono, S_all, no_total_decider_nat, halting_framework_no_decider_at_computable; zero sorry, zero custom axioms.</p>
   <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19433696">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
@@ -475,7 +475,7 @@
 <div class="abs-entry" id="nems-51">
   <p class="abs-entry-title">Paper 51 — Necessary Incompleteness of Internal Semantic Self-Description</p>
   <p class="abs-descriptor">The non-self-erasure theorem and semantic remainder in reflexive systems.</p>
-  <p class='abs-text'>Defines a <strong>self-semantic frame</strong>: a family of internally encoded claims whose truth is the realized semantic truth of the system itself. Proves the flagship theorem: <strong>no sufficiently expressive diagonally capable realized system can internally contain a final theory (internal, total, and exact) of its own realized semantics</strong>. Rules out internal semantic self-exhaustion. Introduces <strong>weak self-erasure</strong> (final self-theory whose verdict behavior lies inside the self-semantic claim family) and <strong>strong self-erasure</strong> (exact internal semantic image closed under self-application); both ruled out as corollaries. Proves the positive master statement: <strong>every internal self-theory either fails totality or leaves an irreducible semantic remainder</strong>. Yields the general non-self-erasure principle: reflexive closure does not collapse a system into pointlike self-identity. Physical corollary: no final internal GUT. Mechanized in Lean 4 as SemanticSelfDescription; 0 sorry, no custom axioms. Builds on SelectorStrength (Paper 29), Reflection (Paper 28), SelfReference (Paper 26). Cross-reference (§F): quotient-section realizability (Paper 27 / Paper 78) is a structurally parallel obstruction—no total-effective quotient section under diagonal capability (SPEC_68, QuotientSectionBridge). <strong>SPEC_69</strong> provides the concrete halting-framework instance: no computable decider for any nontrivial extensional predicate (e.g. halts-on-zero) on the halting framework (<code>QuotientSectionStrength.halting_framework_no_decider_at_computable</code>). <strong>Downstream:</strong> Paper 72 (Constraint Theory of Autonomous Agency) imports NoFinalSelfTheory and discharges mirror non-exhaustion as a theorem.</p>
+  <p class='abs-text'>Defines a <strong>self-semantic frame</strong>: a family of internally encoded claims whose truth is the realized semantic truth of the system itself. Proves the flagship theorem: <strong>no sufficiently expressive diagonally capable realized system can internally contain a final theory (internal, total, and exact) of its own realized semantics</strong>. Rules out internal semantic self-exhaustion. Introduces <strong>weak self-erasure</strong> (final self-theory whose verdict behavior lies inside the self-semantic claim family) and <strong>strong self-erasure</strong> (exact internal semantic image closed under self-application); both ruled out as corollaries. Proves the positive master statement: <strong>every internal self-theory either fails totality or leaves an irreducible semantic remainder</strong>. Yields the general non-self-erasure principle: reflexive closure does not collapse a system into pointlike self-identity. Physical corollary: no final internal GUT. Mechanized in Lean 4 as SemanticSelfDescription; 0 sorry, no custom axioms. Builds on SelectorStrength (Paper 29), Reflection (Paper 28), SelfReference (Paper 26). Cross-reference (§F): quotient-section realizability (Paper 27 / Paper 78) is a structurally parallel obstruction—no total-effective quotient section under diagonal capability (<code>QuotientSectionBridge.halting_framework_no_computable_section</code>). The concrete halting-framework instance: no computable decider for any nontrivial extensional predicate (e.g. halts-on-zero) on the halting framework (<code>QuotientSectionStrength.halting_framework_no_decider_at_computable</code>). <strong>Downstream:</strong> Paper 72 (Constraint Theory of Autonomous Agency) imports NoFinalSelfTheory and discharges mirror non-exhaustion as a theorem.</p>
   <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19429823">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
@@ -756,7 +756,7 @@
   <p class="abs-entry-title">Paper 86 — Reflexive Reality: A Philosophical Exposition</p>
   <p class="abs-descriptor">What the NEMS research program tells us about the deepest questions.</p>
   <p class='abs-text'>Closing <strong>philosophical</strong> capstone of the NEMS Suite (Paper 86): written for philosophers, scientists, and serious non-specialists rather than as a Lean-forward technical manuscript. Explains <strong>Reflexive Reality</strong> as the view forced by taking <strong>Perfect Self-Containment</strong> seriously—closure, the diagonal barrier, physical incompleteness, phenomenology of ground and awareness, and the surviving <strong>Alpha</strong> / Golden-Bridge picture—using sketch-proofs and suite citation codes ([P63], [RP-RI], etc.) tied to the verified program. Situates the suite relative to Infinity Compression, Reflexive Architecture, Adequacy, RI, RFO, ONE, and the General Science of Reflexive Systems so the full research arc is legible without reading every technical paper.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19429903">Zenodo (PDF + DOI)</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19453703">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -764,7 +764,7 @@
   <p class="abs-entry-title">Paper 87 — Reflexive Reality: A Survey for Formal Theory Specialists</p>
   <p class="abs-descriptor">New impossibility results, new proof methods, and a positive science of what happens after impossibility.</p>
   <p class='abs-text'><strong>Paper C2</strong> of the capstone portal series: audience-specific survey for logic, computability theory, proof theory, type theory, and mechanized mathematics. Organizes the program’s formal-theory contributions into four tracks—new impossibility results (three independent engines and their joint classification); new machine-checked theorems on classical mathematical objects (including group-extension splitting, Quillen Theorem A for Galois connections, and twelve-tranche external validation of a positive-closure proof architecture); the <strong>Reflexive Development Law</strong> as a positive dynamical classification after impossibility; and a methodology for typed formal synthesis at program scale. Maintains explicit claim-typing (theorem-extracted, bridge, interpretive). Companion portals <strong>C3</strong> (physics) and <strong>C4</strong> (AI/agents) cover non-formal-audience surveys.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19429905">Zenodo (PDF + DOI)</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19460660">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -780,15 +780,15 @@
   <p class="abs-entry-title">Paper 89 — Reflexive Reality: A Survey for AI, Agents, and AGI Researchers</p>
   <p class="abs-descriptor">Theorem-grade constraints on intelligence, agency, safety, and machine consciousness.</p>
   <p class='abs-text'><strong>Paper C4</strong> of the capstone portal series: theorem-grade constraints for AI, AGI, multi-agent systems, AI safety, cognitive science, and agent foundations—what structural conditions any system must satisfy to qualify for designated properties, and which properties are formally impossible regardless of scale. Headline themes: structural blind spot in parametric self-models; formal <strong>SIAM</strong> characterization of genuine autonomous agency with separation theorems (e.g. feedforward and stateless systems not qualifying); impossibility of total, sound, and complete institutional AI verification under diagonal constraints; simulation hypothesis closed on three independent grounds; <strong>Reflexive Development Law</strong> distinguishing real architectural progress from scaling and relabeling; substrate-independent structural characterization of machine sentience. Explicitly not a claim that AI cannot be capable or that current systems are or are not conscious.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19429909">Zenodo (PDF + DOI)</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19453709">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
 <div class="abs-entry" id="nems-90">
   <p class="abs-entry-title">Paper 90 — A Continent Map of the Reflexive Reality Program</p>
   <p class="abs-descriptor">Structure, dependencies, reader routes, and the role of recent results.</p>
-  <p class='abs-text'>Orientation map for the full program: six major thematic zones (verified NEMS spine; barrier / impossibility engines including RI, RFO, and semantic-type obstruction; ontology and awareness; continuation, agency, and sentience; transputation and realization; summit synthesis), their dependencies, flagship papers per zone, and discipline-specific entry routes for philosophers, logicians, physicists, and AI researchers. Highlights recent machine-checked <strong>semantic-type</strong> obstruction results (<code>SPEC_020</code>) bearing on simulation versus realization. Explicitly an architecture chart for navigating the research continent, not a theorem index or literature review.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19429911">Zenodo (PDF + DOI)</a></p>
+  <p class='abs-text'>Orientation map for the full program: six major thematic zones (verified NEMS spine; barrier / impossibility engines including RI, RFO, and semantic-type obstruction; ontology and awareness; continuation, agency, and sentience; transputation and realization; summit synthesis), their dependencies, flagship papers per zone, and discipline-specific entry routes for philosophers, logicians, physicists, and AI researchers. Highlights recent machine-checked <strong>semantic-type</strong> obstruction results (from <code>reflective-fold-obstruction-lean</code>, <code>SemanticType/</code> modules) bearing on simulation versus realization. Explicitly an architecture chart for navigating the research continent, not a theorem index or literature review.</p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19453710">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -796,7 +796,7 @@
   <p class="abs-entry-title">Paper 91 — Closure Without Exhaustion</p>
   <p class="abs-descriptor">A theorem of internal semantic non-exhaustion for reflexive systems.</p>
   <p class='abs-text'>Flagship statement of <strong>internal semantic non-exhaustion</strong> for sufficiently expressive reflexive systems: they may close over themselves but cannot admit a final, total, exact internal theory of their own realized semantics; something remains structurally unabsorbed. Sharpens classical incompleteness barriers toward the demand for full internal capture of total semantic truth (not mere unprovability in a fixed formal system). Gives two independent machine-checked proof routes, closure-vs.-collapse discipline, a reusable notion of final internal self-theory, and consequence links to physical incompleteness, non-emulability of execution under record-divergent choice, observer non-self-exhaustion, and syntax–semantics separation; unification corollary treats Gödel, Kleene, Löb, and Tarski-style phenomena under a master fixed-point spine in Lean.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19429914">Zenodo (PDF + DOI)</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19453713">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -804,7 +804,7 @@
   <p class="abs-entry-title">Paper 92 — Consciousness, Phenomenology, and Mind</p>
   <p class="abs-descriptor">A formal theory of sentience, qualia, and awareness in Reflexive Reality.</p>
   <p class='abs-text'><strong>Paper C5</strong> capstone survey of mind and phenomenology for philosophers, cognitive scientists, and serious non-specialists. Central thesis: consciousness has a <strong>formal structure</strong> uniquely selected under stated admissibility constraints; mind, qualia, awareness, and world are coordinated aspects within one Alpha-grounded fact—not alien substances or mere illusions. Synthesizes the consciousness arc (Papers 51–75): Paper 74’s six-part phenomenology ontology with anti-collapse theorems; Paper 75’s uniqueness / survivor theorem in admissible theory space; Paper 73’s SIAM sentience regime and separation theorems (e.g. feedforward and stateless architectures not qualifying); qualia and awareness-locus results from Papers 55–70; companion to the continent map (Paper 90). Does not settle every phenomenal detail; states the proved architectural skeleton.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19429916">Zenodo (PDF + DOI)</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19453714">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -934,19 +934,8 @@ cocycle obstruction vanishes; (3) the 2-coc</p>
 <div class="abs-entry" id="ic-paper-quillen-theorem-a">
   <p class="abs-entry-title">Quillen&#x27;s Theorem A for Galois Connections</p>
   <p class="abs-descriptor">First machine-checked formalization of Quillen A for Galois connections.</p>
-  <p class='abs-text'>We present the first machine-checked formalization of Quillen&#x27;s Theorem A
-for Galois connections between partial orders, as the topology discharge
-of the same fiber/section/obstruction architecture developed for group
-extensions and embedding problems . For a Galois connection
-(l,u) with l : P \to Q and u : Q \to P, we construct the forward and
-backward nerve maps together with explicit 1-simplices (closure edges
-[p \to u(l(p))] and kernel edges [l(u(q)) \to q]) that witness the
-homotopy between each composition and the identity at the vertex level. We
-prove that the nerve of any category with a terminal object is connected
-with unique edges to the terminal vertex, establishing the fiber
-contractibility that Quillen&#x27;s theorem requires. The formalization works at
-the simplicial set level; t</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19430569">Zenodo (PDF + DOI)</a></p>
+  <p class='abs-text'>Machine-checked construction of the homotopy data for Quillen&#x27;s Theorem A in the Galois connection case: nerve maps induced by the lower and upper adjoints, and explicit 1-simplex witnesses (closure edges [p → u(l(p))] and kernel edges [l(u(q)) → q]). The composition-to-identity step requires simplicial homotopy as a Lean type (not yet in Mathlib) and is deferred to future work.</p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19460385">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -978,7 +967,7 @@ design decisions (nam</p>
   <p class="abs-entry-title">Closure, Realization, and Reflective Residue (Summit 1)</p>
   <p class="abs-descriptor">Strata synthesis: NEMS + APS + IC with bridge theorems and the Non-Erasure Principle.</p>
   <p class='abs-text'>Lean 4 software archive for the <strong>NEMS</strong> program: <strong>Lean Reflexive Architecture</strong>. This Zenodo record bundles a pinned Git snapshot of the formalization. Exact file scope and revision policy appear in the repository manifest shipped with the archive.</p><p class='abs-text'>Cite using the Zenodo DOI after publication. When available, add companion articles or public repository URLs to Zenodo <code>related_identifiers</code>.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19454315">Zenodo (PDF + DOI)</a> &nbsp;·&nbsp; <a href="https://github.com/novaspivack/reflexive-architecture-lean">GitHub</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19430707">Zenodo (PDF + DOI)</a> &nbsp;·&nbsp; <a href="https://github.com/novaspivack/reflexive-architecture-lean">GitHub</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -986,7 +975,7 @@ design decisions (nam</p>
   <p class="abs-entry-title">The Geometry of What Maps Forget (Summit 2)</p>
   <p class="abs-descriptor">Residual kernels and what maps forget: universal fiber architecture for non-injective comparison.</p>
   <p class='abs-text'>Lean 4 software archive for the <strong>NEMS</strong> program: <strong>Lean Reflexive Architecture</strong>. This Zenodo record bundles a pinned Git snapshot of the formalization. Exact file scope and revision policy appear in the repository manifest shipped with the archive.</p><p class='abs-text'>Cite using the Zenodo DOI after publication. When available, add companion articles or public repository URLs to Zenodo <code>related_identifiers</code>.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19454324">Zenodo (PDF + DOI)</a> &nbsp;·&nbsp; <a href="https://github.com/novaspivack/reflexive-architecture-lean">GitHub</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19430707">Zenodo (PDF + DOI)</a> &nbsp;·&nbsp; <a href="https://github.com/novaspivack/reflexive-architecture-lean">GitHub</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -994,7 +983,7 @@ design decisions (nam</p>
   <p class="abs-entry-title">Representational Incompleteness</p>
   <p class="abs-descriptor">No parametric self-model covers its own diagonal; six no-escape routes closed as theorems.</p>
   <p class='abs-text'>Lean 4 software archive for the <strong>NEMS</strong> program: <strong>Lean Representational Incompleteness</strong>. This Zenodo record bundles a pinned Git snapshot of the formalization. Exact file scope and revision policy appear in the repository manifest shipped with the archive.</p><p class='abs-text'>Cite using the Zenodo DOI after publication. When available, add companion articles or public repository URLs to Zenodo <code>related_identifiers</code>.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19454328">Zenodo (PDF + DOI)</a> &nbsp;·&nbsp; <a href="https://github.com/novaspivack/representational-incompleteness-lean">GitHub</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19430706">Zenodo (PDF + DOI)</a> &nbsp;·&nbsp; <a href="https://github.com/novaspivack/representational-incompleteness-lean">GitHub</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -1002,7 +991,7 @@ design decisions (nam</p>
   <p class="abs-entry-title">Reflective Fold Obstruction</p>
   <p class="abs-descriptor">Hull theorem: forward-closed predicates confine the entire reachable hull; fold barriers are real.</p>
   <p class='abs-text'>Lean 4 software archive for the <strong>NEMS</strong> program: <strong>Lean Reflective Fold Obstruction</strong>. This Zenodo record bundles a pinned Git snapshot of the formalization. Exact file scope and revision policy appear in the repository manifest shipped with the archive.</p><p class='abs-text'>Cite using the Zenodo DOI after publication. When available, add companion articles or public repository URLs to Zenodo <code>related_identifiers</code>.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19454334">Zenodo (PDF + DOI)</a> &nbsp;·&nbsp; <a href="https://github.com/novaspivack/reflective-fold-obstruction-lean">GitHub</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19429256">Zenodo (PDF + DOI)</a> &nbsp;·&nbsp; <a href="https://github.com/novaspivack/reflective-fold-obstruction-lean">GitHub</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -1010,7 +999,7 @@ design decisions (nam</p>
   <p class="abs-entry-title">Observer Non-Exhaustibility: A Formal Synthesis and Classification of Observer Architectures</p>
   <p class="abs-descriptor">Three blocked families + positive non-collapsing residual architecture from the awareness arc.</p>
   <p class='abs-text'>Lean 4 software archive for the <strong>NEMS</strong> program: <strong>Lean Observer Non Exhaustability</strong>. This Zenodo record bundles a pinned Git snapshot of the formalization. Exact file scope and revision policy appear in the repository manifest shipped with the archive.</p><p class='abs-text'>Cite using the Zenodo DOI after publication. When available, add companion articles or public repository URLs to Zenodo <code>related_identifiers</code>.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19454338">Zenodo (PDF + DOI)</a> &nbsp;·&nbsp; <a href="https://github.com/novaspivack/observer-non-exhaustability-lean">GitHub</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19429254">Zenodo (PDF + DOI)</a> &nbsp;·&nbsp; <a href="https://github.com/novaspivack/observer-non-exhaustability-lean">GitHub</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -1018,7 +1007,7 @@ design decisions (nam</p>
   <p class="abs-entry-title">The Architecture of Outer Admissibility</p>
   <p class="abs-descriptor">Unified gate theorem; heterogeneous outer certificate forms collapse; strict three-level architecture.</p>
   <p class='abs-text'>Lean 4 software archive for the <strong>NEMS</strong> program: <strong>Lean Adequacy Architecture</strong>. This Zenodo record bundles a pinned Git snapshot of the formalization. Exact file scope and revision policy appear in the repository manifest shipped with the archive.</p><p class='abs-text'>Cite using the Zenodo DOI after publication. When available, add companion articles or public repository URLs to Zenodo <code>related_identifiers</code>.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19454344">Zenodo (PDF + DOI)</a> &nbsp;·&nbsp; <a href="https://github.com/novaspivack/adequacy-architecture-lean">GitHub</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19430708">Zenodo (PDF + DOI)</a> &nbsp;·&nbsp; <a href="https://github.com/novaspivack/adequacy-architecture-lean">GitHub</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -1026,7 +1015,7 @@ design decisions (nam</p>
   <p class="abs-entry-title">The General Science of Reflexive Systems</p>
   <p class="abs-descriptor">Anchored completion limits, barrier families, residual aftermath, and the Reflexive Development Law.</p>
   <p class='abs-text'>Lean 4 software archive for the <strong>NEMS</strong> program: <strong>Lean Reflexive Architecture Nonexhaustibility</strong>. This Zenodo record bundles a pinned Git snapshot of the formalization. Exact file scope and revision policy appear in the repository manifest shipped with the archive.</p><p class='abs-text'>Cite using the Zenodo DOI after publication. When available, add companion articles or public repository URLs to Zenodo <code>related_identifiers</code>.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19454346">Zenodo (PDF + DOI)</a> &nbsp;·&nbsp; <a href="https://github.com/novaspivack/reflexive-architecture-non-exhaustibility-lean">GitHub</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19429252">Zenodo (PDF + DOI)</a> &nbsp;·&nbsp; <a href="https://github.com/novaspivack/reflexive-architecture-non-exhaustibility-lean">GitHub</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -1038,7 +1027,7 @@ design decisions (nam</p>
   <p class="abs-entry-title">Self-Transcending Generators: Fixed Causal Laws Without Final Explanatory Closure</p>
   <p class="abs-descriptor">Proves explanatory anti-closure: fixed lawful generators whose phase tower cannot be covered by any fixed admissible reducer.</p>
   <p class='abs-text'>A widespread tacit assumption holds that if a phenomenon is generated by fixed fundamental laws, it must admit <em>final explanatory closure</em>—a fixed explanatory standpoint from which everything important can be said. This flagship refutes that creed in a sharp, machine-backed sense: there are finitely specified lawful generators whose infinite phase tower lies in one causal trace, yet <em>fixed admissible explanatory closure</em> for the full tower is impossible within the relevant reducer class. The proved profile is joint, not incremental: one fixed lawful generator; infinitely many generated phases; conservative yet irreducible explanatory succession; universal failure of every fixed reducer of the class; at the <em>crown</em>, upward explanatory necessity—later regimes become required for structural truths about the generator itself. The paper separates this from Gödel/Tarski (provability / truth-definition), Wolfram-style computational irreducibility (simulation cost), and narrative Kuhnian history, targeting instead <em>explanatory anti-closure</em> under exact generation. Philosophically it supports <em>lawful self-transcending structure</em>: everything remains generated from below, while explanation need not close from below. Scope, boundaries, and Lean declaration tables are explicit in the PDF; cited summit certificates live under <code>NoveltyTheory/</code> in the artifact.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19454924">Zenodo (PDF + DOI)</a> &nbsp;·&nbsp; <a href="https://github.com/novaspivack/novelty-theory-lean">GitHub</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19423547">Zenodo (PDF + DOI)</a> &nbsp;·&nbsp; <a href="https://github.com/novaspivack/novelty-theory-lean">GitHub</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
