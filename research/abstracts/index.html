@@ -53,6 +53,7 @@
 <ul class="abs-toc">
 <li><a href="#abs-b1-nems">B1. NEMS Core Suite (Papers 00–92)</a></li>
 <li><a href="#abs-b1-companions">B1. Companion Notes</a></li>
+<li><a href="#abs-b2-ugp">B2. UGP Formalization</a></li>
 <li><a href="#abs-b5a-ic">B5a. Infinity Compression</a></li>
 <li><a href="#abs-b5-ext">B5b–g. Extended Programs</a></li>
 <li><a href="#abs-novelty">C. Novelty Theory</a></li>
@@ -843,6 +844,20 @@
   <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19429928">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
+
+<a href="#abs-toc" class="back-top">↑ Back to top</a>
+
+<h2 class="abs-section" id="abs-b2-ugp">B2. UGP Formalization</h2>
+
+<div class="abs-entry featured" id="ugp-paper">
+  <p class="abs-entry-title">ugp-lean: A Machine-Checked Formalization of the Universal Generative Principle</p>
+  <p class="abs-descriptor">Complete Lean 4 formalization of UGP: ridge sieve, canonical seed (1,73,823), GTE orbit, Quarter-Lock, Turing universality, and self-reference. Zero sorry, zero custom axioms.</p>
+  <p class='abs-text'>Self-contained Lean 4 formalization of the Universal Generative Principle (UGP). Defines the complete framework from first principles — ridge sieve ($R_n = 2^n - 16$), prime-lock criterion, Generative Triple Evolution (GTE) update map, canonical orbit, Quarter-Lock identity, Turing universality via Rule 110, and self-reference (Lawvere, Kleene, Rice) — and proves the core results with a strict zero-sorry, zero-custom-axiom policy. Central results: Residual Seed Uniqueness (RSUC) via a two-theorem architecture (Theorem A: structural reduction; Theorem B: finite classification; MDL selects canonical seed); orbit determined by update map $T$ (not postulated); general ridge remainder lock for all $n \ge 5$; even-step $c$-invariance theorem. Introduces UGP primes (OEIS A394412): a new class of primes arising from the ridge sieve, with formal <code>IsUGPPrime</code> predicate, existence proof, and ten machine-checked instances across three ridge levels ($n = 10, 13, 16$). Proves divisor count unboundedness ($\tau(2^n - 16) \to \infty$) from the Mersenne gcd identity. Formally states the Mirror-Dual Conjecture (infinitely many levels with mirror-dual pairs) and UGP Prime Infinitude Conjecture, with five machine-verified witness pairs and heuristic analysis. All ten open conjectures formally stated as Lean propositions. Builds against Mathlib v4.29.0-rc3; imports self-reference theorems from nems-lean and aps-rice-lean. Companion libraries: nems-lean (Paper 26), aps-rice-lean, primes-in-greedy-B3 (OEIS A079852).</p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19433538">Zenodo (PDF + DOI)</a> &nbsp;·&nbsp; <a href="https://github.com/novaspivack/ugp-lean">GitHub</a></p>
+  <a href="#abs-toc" class="back-top">↑ Back to top</a>
+</div>
+
+<p style="font-size:.88em;color:#555;margin-top:.3em"><strong>Lean source archive:</strong> <a href="https://doi.org/10.5281/zenodo.19429247">10.5281/zenodo.19429247</a> (full source tarball)</p>
 
 <a href="#abs-toc" class="back-top">↑ Back to top</a>
 
