@@ -204,7 +204,7 @@
   <p class="abs-entry-title">Paper 14 — Born Internal &amp; Complete Semantics Implies Perfect Self-Containment</p>
   <p class="abs-descriptor">The reverse direction: from quantum probability (Born rule) back to closure.</p>
   <p class='abs-text'>This paper proves the reverse direction of the PSC–Born fixed-point architecture: if quantum probability (Born rule) provides the internal, complete semantics for macroscopic records, then external model selection is impossible and the theory must satisfy Perfect Self-Containment (PSC). Born Internal &amp; Complete Semantics (BICS) is defined as a semantic-architecture condition stating that record probabilities are given by the Born rule via an internal quantum state, are context-independent (noncontextual), and are semantically complete (no external completion bits). The paper proves: BICS ⇒ NEMS (No External Model Selection), and under existing closure reductions (Externality Reduction + semantic visibility), BICS ⇒ PSC bundle / Full PSC. Combined with the forward direction (Papers 08 and 13: PSC ⇒ Born semantics), this establishes a fixed-point equivalence: within an explicitly defined universe class, PSC and Born-as-internal-complete-record-semantics are architecturally equivalent. The core theorem (BICS ⇒ NEMS) is fully machine-checked in Lean 4 with zero custom axioms and zero sorry. This completes the NEMS suite by closing the loop between semantic closure, quantum probability, and perfect self-containment.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19429743">Zenodo (PDF + DOI)</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19575050">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -252,7 +252,7 @@
   <p class="abs-entry-title">Paper 20 — Rigidity of the Gauge Signature under PSC: A Sieve Theorem (T3)</p>
   <p class="abs-descriptor">Sieve theorem for theory spaces; residual classification program for gauge signatures.</p>
   <p class='abs-text'>This paper extends the logic of semantic closure to the gauge structure of the universe, challenging the string theory &quot;landscape&quot; paradigm. We propose that the Standard Model gauge signature is the unique mathematical fixed point for any stable, self-contained record-bearing system in 4D spacetime. We formalize a PSC Sieve on 4D gauge-theory space, consisting of self-containment constraints: structural stability (NM*), semantic admissibility (SA), thermodynamic viability (TV), and anomaly consistency. We prove that these constraints eliminate large classes of theories, leaving a highly constrained residual set. We state the Residual Classification Conjecture: within this residual set, only the SU(3) × SU(2) × U(1) signature with 3 generations survives. All definitions and conditional theorems are formalized in Lean 4, and the residual conjecture is supported by a reproducible computational classification pipeline.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19429755">Zenodo (PDF + DOI)</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19575045">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -404,7 +404,7 @@
   <p class="abs-entry-title">Paper 39 — Probability as Closure in General Probabilistic Theories</p>
   <p class="abs-descriptor">Uniqueness and rigidity of state assignment from auditability principles.</p>
   <p class='abs-text'>Proves that under closure-style constraints (context-independence of effects, additivity, normalization), probability assignments in general probabilistic theories (GPTs) are not free but forced: any assignment satisfying these principles corresponds to a unique affine state functional on effects; if effects span the space, this extends uniquely to a linear functional. States are determined by agreement on all effects (extensionality) and on a spanning set. The quantum Born rule is the instance for matrix-ordered spaces. A dedicated bridge module (<code>GPTClosure/Instances/QuantumFinite.lean</code>) connects Paper 13&#x27;s quantum formalization (<code>NemS.Quantum</code>) with the GPT framework, showing that finite-dimensional quantum probability is an instance of closure-forced probability: the PSD cone defines an ordered unit space, the Born rule equals the GPT state-effect pairing (<code>born_rule_is_gpt_prob</code>), and POVMs map to GPT measurements (<code>povmToMeasurement</code>); state uniqueness follows from the GPT uniqueness theorem (<code>quantum_state_uniqueness</code>). Mechanized in Lean 4 as GPTClosure (ordered unit space, effects, states, measurements, state_ext_effect_span, uniqueness_under_spanning, closure_implies_state, Toy, QuantumFinite); 3 documented sorrys in QuantumFinite (PSD cone pointedness, Born-rule nonnegativity, wiring to busch_gleason_unique), 0 sorry in all other GPTClosure modules, no custom axioms.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19429796">Zenodo (PDF + DOI)</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.19575038">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -880,7 +880,7 @@
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
-<p style="font-size:.88em;color:#555;margin-top:.3em"><strong>Lean source archive:</strong> <a href="https://doi.org/10.5281/zenodo.19555084">10.5281/zenodo.19555084</a> (full source tarball)</p>
+<p style="font-size:.88em;color:#555;margin-top:.3em"><strong>Lean source archive:</strong> <a href="https://doi.org/10.5281/zenodo.19574778">10.5281/zenodo.19574778</a> (full source tarball)</p>
 
 <a href="#abs-toc" class="back-top">↑ Back to top</a>
 
