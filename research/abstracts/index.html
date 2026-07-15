@@ -3,10 +3,10 @@
 <head>
 <meta charset='UTF-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<title>Research Abstracts — novaspivack.com (preview)</title>
+<title>Research Abstracts</title>
 </head>
 <body style='max-width:900px;margin:2em auto;padding:0 1em;font-family:Georgia,serif;'>
-<h1 style='color:#1a5276;'>Research Abstracts — Preview</h1>
+<h1 style='color:#1a5276;'>Research Abstracts</h1>
 <hr>
 <div class="abs-page">
 <style>
@@ -46,20 +46,6 @@
 .abs-toc li { margin: .25em 0; }
 .abs-toc a { color: var(--accent-mid); text-decoration: none; }
 .abs-toc a:hover { text-decoration: underline; }
-.rr-ai-disclosure {
-  background: #fefce8;
-  border: 1px solid #fde047;
-  border-left: 4px solid #eab308;
-  border-radius: 5px;
-  padding: 1.1em 1.5em;
-  margin: 1.5em 0 2em;
-  font-size: .92em;
-  line-height: 1.65;
-}
-.rr-ai-disclosure h3 { margin: 0 0 .6em; font-size: 1em; color: #713f12; font-family: Georgia, serif; }
-.rr-ai-disclosure p { margin: 0 0 .55em; }
-.rr-ai-disclosure p:last-child { margin-bottom: 0; }
-.rr-ai-disclosure strong { color: #713f12; }
 </style>
 <div class="abs-intro" id="abs-toc">
 <p><strong>Full Abstracts — Reflexive Reality Research Program</strong></p>
@@ -76,16 +62,6 @@
 <li><a href="#abs-monographs">D. Foundational Monographs</a></li>
 <li><a href="#abs-cognitive">E. Cognitive Computing — Formal Bounds</a></li>
 </ul>
-</div>
-
-<div class="rr-ai-disclosure">
-<h3>Is This AI-Generated?</h3>
-<p>In the era of AI-assisted science it is natural to ask how much AI was involved in this research program, and how it was used. Transparency matters, so here is an honest account.</p>
-<p><strong>These proofs were not generated autonomously by AI.</strong> The genesis of this project originated in the 1990s, before the advent of modern AI and proof assistants such as Lean. The ideas here are original, human-generated, and human-directed, developed over many decades before AI tools existed.</p>
-<p><strong>Where AI was not used:</strong> AI did not originate the theoretical ideas, direct the theoretical development, or make the underlying breakthroughs.</p>
-<p><strong>Where AI was used:</strong> AI was used for development and data analysis, theoretical explorations, adversarially testing ideas, helping with Lean formalization and debugging, assisting in project management, and for documentation and drafting. AI assistance made a project of this scale tractable &mdash; the author made earlier attempts at developing and formalizing versions of this theory using Prolog, Scheme, and other languages, but the task was too large and the tools were not designed for it.</p>
-<p><strong>Computational tools:</strong> Some results made use of scientific computing tools for numerics, simulations, and computational search &mdash; including SageMath, PARI/GP, Python, NumPy, SciPy, SymPy, Pandas, scikit-learn, XGBoost, PyTorch, JAX, NetworkX, iGraph, Numba, PostgreSQL, and SAT/constraint solvers. Visualization: Matplotlib, Seaborn.</p>
-<p><strong>All scientific results are independently verified.</strong> Every claim labeled Category-A in the published papers is formalized in Lean 4, a formal proof assistant that mechanically checks each logical step. The Lean library contains hundreds of modules with zero unverified placeholders and zero custom axioms &mdash; the proofs depend only on the standard Mathlib library, which is itself fully machine-checked. Computational results (particle scans, spectrum predictions, numerical validations) are independently reproduced by the author against experimental data from established sources (PDG, NuFIT, Luyssaert et al., and others). The combination of formal proofs and independent computational verification means that every result in this programme can be audited, reproduced, and falsified &mdash; the opposite of generated content that is unverifiable.</p>
 </div>
 
 <h2 class="abs-section" id="abs-b1-nems">B1. NEMS — The Core Suite (Papers 00–92)</h2>
@@ -1444,7 +1420,7 @@ The architecture is two-level. At Level 1, p defines the Chiral Minkowski Cellul
 Over 170 quantitative results across 15 prediction sectors are derived and compared against PDG, NuFIT 6.0, and Planck 2018: nine charged-fermion masses at 0.295% RMS; the fine-structure constant 1/alpha = 137 as a pure arithmetic identity; the Weinberg angle at +0.038 sigma after two-loop corrections; the CMB spectral tilt n_s = 0.96488 at -0.005 sigma; and the baryon asymmetry eta_B = 6.109e-10 at +0.15 sigma. Cross-sector predictions --- cosmological observables derived from the same arithmetic that produces particle masses, with no inter-sector parameter tuning --- distinguish GTE from numerology. The Born rule is derived, not postulated; the quantum measurement problem is dissolved --- reframed in terms of PSC-forced transputation, conditional on the D4 universality assumption. The cosmological constant problem is substantially addressed: Lambda = 0 classically and the observed Omega_Lambda is bracketed; the full quantum hierarchy remains an open problem. The strong CP problem is resolved without an axion. All four standard inflation motivations are discharged from first principles without an inflationary epoch.
 GTE makes falsifiable predictions beyond the Standard Model: a dark-sector particle at 211.9 MeV (Belle II); r=0 (LiteBIRD); w=-1 exactly (Euclid); and theta_QCD=0 requiring no axion. All central results are machine-certified in Lean 4 across nearly 400 modules of the ugp-lean library.
 The Standard Model is not a coincidence. It is a theorem.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.21230988">Zenodo (PDF + DOI)</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.21365975">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -1452,7 +1428,7 @@ The Standard Model is not a coincidence. It is a theorem.</p>
   <p class="abs-entry-title">MDL Selects the Wolfram Rule: Z₇ Dynamics, Algebraic Structure, and Standard Model Encoding of the GTE Polynomial</p>
   <p class="abs-descriptor">The missing selection principle for the Wolfram Physics Project: MDL+PSC uniquely selects p(L,C,R) = C+R−CR−LCR from 7^343 k=7 CA candidates (Theorem T96-02, Lean 4, zero sorry). Five algebraic uniqueness theorems: invariant subset classification ({0}, {0,1}, Z₇ — exhaustive native_decide); Rule 110 is the unique maximal proper invariant sub-CA; QNR Binary Floor — N_fam=5 is a quadratic non-residue mod 7 explaining {0,1} uniqueness. Object 0/1/2 framework distinguishes the raw polynomial (Object 0), the MDL-selected CA (Object 1), and the continuum field (Object 2). New: ruleGTE causal graph produces 1023-event fractal binary tree (CatAL); GEN₂/GEN₃ topological degeneracy machine-certified; structural equivalence to Daucus carota L-system established. 334 modules.</p>
   <p class='abs-text'>Stephen Wolfram&#x27;s Physics Project identifies the universe with a specific hypergraph rewriting rule but provides no principled derivation of which rule nature selects from an astronomically large rule space. We provide the missing selection principle: the Minimum Description Length (MDL) criterion, combined with the Perfect Self-Containment (PSC) orbit constraint, uniquely selects a k=7, r=1 string substitution rule with polynomial form p(L,C,R) = C+R-CR-LCR 7 from 7^343 10^290 candidates (Theorem T96-02, machine-certified in Lean 4, zero sorry). We present the first systematic study of this polynomial as a standalone dynamical system (Object 0 in the GTE derivation tower), distinct from the previously studied lookup table (Object 1 / CMCA); the Schwartz-Zippel theorem proves is not a polynomial of degree 3 over 7 (), establishing that the two objects differ categorically, not merely quantitatively. Five algebraic results are established: Rule 110 arises as the binary restriction of p (CatAL); the invariant subset lattice of p over 7 contains exactly three non-empty elements, \0\, \0,1\, and - so Rule 110 is the unique maximal proper invariant sub-CA (CatAL, zero sorry, exhaustive native\_decide); p is the unique degree-3 polynomial over 7 reproducing Rule 110 on binary inputs (CatA); the uniqueness of \0,1\ as binary floor is explained by N_fam = 5 being a quadratic non-residue mod 7 - the Standard Model family count is the algebraic obstruction to any intermediate invariant sublattice (CatAL); and is provably non-polynomial (Schwartz-Zippel, ). The QNR obstruction is then traced to its source: the master quadratic m(x) = x^2+x-1 (discriminant 5 = N_fam) is the diagonal factor of p over every commutative ring, split over R - where its positive root is the SRRG fixed point seeding the electroweak-scale derivation - and inert at 7, where rootlessness at every 7-adic depth protects the binary floor (CatAL): one Z-quadratic, two completions, with an all-q splitting dichotomy governed by q 5. The same quadratic controls the dynamics: the vacuum is the unique temporally fixed configuration at every ring size (Vacuum Uniqueness Theorem, CatAL), proved by reducing fixed configurations to the golden M\&quot;obius map on P^1(7), and the Artin-Mazur zeta functions of the ring dynamics factorize exactly. Eisenstein arithmetic supplies the complementary structure: the internal symmetry group F_21 is the norm-7 residue-field quotient (Z[]/(3+))^+ _3 (CatAL); the zero variety satisfies the motivic identity [V(p)] = _6(L) and carries a torus action whose unique fixed zero is the ether point; the golden and Eisenstein rings are the two quadratic subfields of Q(-3,5), of conductor 15 = N_gen N_fam; and the full symmetry group of V(p) is AGL(1,7) of order 42, whose reflection element swaps Rule 110 with Rule 124 - the chiral pair of the CMCA architecture (CatAL). The period-475 attractor of the 5-cell ring is resolved by an Attractor Factorization Theorem (475 = 5 5 19: ring, drift, and a drift-invariant inert clock carried by 7^3), with the value 19 shown to be enumerative rather than mechanism-forced (CatAD). The polynomial&#x27;s local WolframModel update structure produces a 1023-event fractal binary tree causal graph at 10 generations (, gte\_rulegte\_ten\_generations); the binary branching arises from the topological degeneracy of GEN_2 and GEN_3 (, gen2\_gen3\_topology\_degenerate). This causal tree is structurally equivalent to the Lindenmayer system F\!\!F[+F][-F] modelling Daucus carota compound umbels (Apiaceae), with matching Horton ratio r_B = 2 () and Strahler number 10. A three-tape extension via the Dimensional Protocol Principle yields a connected 3+1D causal bulk with (-1)/(+2) = 40\% cross-tape (gravitational) edge fraction for = 3.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.20734702">Zenodo (PDF + DOI)</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.21365978">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -1486,7 +1462,7 @@ These results establish a coherent group-theoretic skeleton: PSL(2,7) contains F
   <p class="abs-entry-title">The GTE Framework: A Comparative Assessment</p>
   <p class="abs-descriptor">Assesses the GTE framework against a neutral 10-dimension rubric comparing it to the Standard Model, SUSY, string theory, loop quantum gravity, causal sets, the Wolfram physics programme, asymptotic safety, and other frameworks. GTE is the only programme simultaneously supplying a derived selection principle, zero free dimensionless parameters, machine-certified load-bearing steps in Lean 4 (zero sorry, ~364 modules), cross-sector predictions, and named falsifiers. Roughly 40 zero-parameter predictions, ~37 within 1σ of PDG 2024/NuFIT 6.0/Planck 2018. Conclusion: the framework earns serious consideration on its own stated terms.</p>
   <p class='abs-text'>The Generative Triple Evolution (GTE) framework derives the Standard Model parameter spectrum, the gauge group, spacetime, the postulates of quantum mechanics, and the principal cosmological observables from a single Z_7-symmetric scalar field Phi_MDL whose algebraic certificate is a 19-bit polynomial p(L,C,R) = C+R-CR-LCR over GF(7), selected by a minimum-description-length (MDL) principle that is itself a theorem of perfect self-containment. This paper does not re-derive those results; it assesses the framework against the standards a skeptical foundations-of-physics audience would reasonably apply. We define a neutral, eleven-dimension rubric — selection principle, free-parameter count, derivation of the gauge group and quantum-mechanical postulates, origin of spacetime, cross-sector and out-of-sample predictivity, quantitative agreement, falsifiability, formal verification, and resolution of long-standing problems — and score GTE side by side with the Standard Model, supersymmetric grand unification, string theory and the landscape, loop quantum gravity, causal sets, the Wolfram and digital-physics programmes, asymptotic safety, Wheeler&#x27;s &quot;it from bit,&quot; Tegmark&#x27;s mathematical-universe hypothesis, and Penrose objective reduction. On this rubric GTE is, to our knowledge, the only programme that simultaneously (i) supplies a derived selection principle rather than an assumed one, (ii) carries zero free dimensionless parameters fitted to particle data, (iii) machine-certifies its load-bearing steps in Lean 4 with zero sorry and the standard Mathlib axiom signature across roughly four hundred modules, (iv) makes cross-sector predictions (n_s, eta_B) in domains causally disconnected from any fitting target, and (v) names explicit near-term falsifiers. We quantify the case (roughly forty zero-parameter predictions, about thirty-seven within 1-sigma of PDG 2024 / NuFIT 6.0 / Planck 2018; an out-of-sample evidence accounting; machine-verified non-circularity) and place it honestly against its open problems (a single dimensional anchor m_tau, the conditional gauge-group derivation, an atmospheric-angle tension at -1.35 sigma, the Gromov–Hausdorff continuum limit, and the quantum cosmological-constant hierarchy). The conclusion is narrow and defensible: the framework is not numerology, it is more economical and more rigorously verified than its rivals on the dimensions where it can be compared, and it earns serious consideration on its own stated terms.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.21200699">Zenodo (PDF + DOI)</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.21365981">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -1548,7 +1524,7 @@ These results establish a coherent group-theoretic skeleton: PSL(2,7) contains F
   <p class="abs-entry-title">How MDL Selects the 19-Bit Polynomial: The Five-Step Elimination</p>
   <p class="abs-descriptor">Walks through the five-step MDL elimination chain that selects p(L,C,R) = C + R - CR - LCR mod 7 from ~10^290 candidate polynomials.</p>
   <p class='abs-text'>The MDL (Minimum Description Length) principle selects the GTE polynomial p(L,C,R) = C + R - CR - LCR mod 7 from 7^343 approximately 10^290 candidates by running a five-step elimination chain. Every step is a forward inference; none refers back to any Standard Model input. This tutorial walks through each of the five elimination steps, explaining the mathematical criterion applied at each stage and why the specific polynomial p is the unique survivor. The selection is machine-certified in Lean 4 (zero sorry), providing a formal guarantee that no other polynomial of the same degree and modulus satisfies all five MDL constraints simultaneously.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.20706077">Zenodo (PDF + DOI)</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.21328714">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -1556,7 +1532,7 @@ These results establish a coherent group-theoretic skeleton: PSL(2,7) contains F
   <p class="abs-entry-title">The Phi_MDL Field: From Discrete Certificate to Continuum Physics</p>
   <p class="abs-descriptor">Explains how the discrete GTE polynomial gives rise to the phi_MDL continuum field and how all Standard Model parameters emerge from its dynamics.</p>
   <p class='abs-text'>From a single polynomial — p(L,C,R) = C + R - CR - LCR mod 7 — that updates a row of cells in seven possible states, the masses of all elementary particles, the structure of spacetime, and the gauge couplings of the Standard Model can be derived. The bridge between the discrete arithmetic substrate and continuum physics is the Phi_MDL scalar field: a smooth field whose vacuum expectation value is fixed by the SRRG (Self-Referential Recursion Group) fixed point of the master quadratic. This tutorial explains how the Phi_MDL field is constructed from the GTE certificate, how its dynamics are derived from the MDL-Lovelock principle, and how its vacuum structure produces the electroweak scale and Higgs mass without free parameters.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.20669778">Zenodo (PDF + DOI)</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.21365905">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -1572,7 +1548,7 @@ These results establish a coherent group-theoretic skeleton: PSL(2,7) contains F
   <p class="abs-entry-title">Perfect Self-Containment and MDL: Why the Universe Has to Select Itself</p>
   <p class="abs-descriptor">Explains PSC (Perfect Self-Containment) as the uniqueness criterion that, combined with MDL, selects the observed universe&#x27;s parameters without free constants.</p>
   <p class='abs-text'>Why do the laws of physics have the specific values they do? The Standard Model of particle physics is the most precise physical theory ever constructed, but it cannot explain its own parameters — it requires approximately 25 free constants that must be measured and inserted by hand. The UGP Physics framework answers this through two interlocking principles: Perfect Self-Containment (PSC), which requires that the universe&#x27;s description be internally self-consistent without external reference, and the Minimum Description Length (MDL) criterion, which selects the simplest such self-consistent description. This tutorial explains both principles, their mathematical formulation, and how their combination forces the universe to select the specific polynomial and parameters that match the observed Standard Model.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.20706079">Zenodo (PDF + DOI)</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.21365906">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -1580,7 +1556,7 @@ These results establish a coherent group-theoretic skeleton: PSL(2,7) contains F
   <p class="abs-entry-title">How the Standard Model Quantum Numbers Emerge from Z_7 x Z_3: A Tutorial on Winding Numbers, Ground States, and Generations</p>
   <p class="abs-descriptor">Shows how the discrete symmetry group Z_7 x Z_3 of the GTE substrate determines all Standard Model quantum numbers via winding numbers and ground-state selection.</p>
   <p class='abs-text'>A quantum number is a permanent label attached to a particle — like a barcode that no physical process can change. The Standard Model has been discovered to require a specific set of such labels (color charge, weak isospin, hypercharge, baryon number, lepton number, and generation) but provides no explanation for why these particular quantum numbers exist. This tutorial explains how the UGP Physics / GTE framework derives the complete set of Standard Model quantum numbers from the group structure Z_7 x Z_3, using winding numbers around the discrete vacuum of the GTE polynomial, ground state degeneracy counting, and the arithmetic structure of the three-tape CMCA. The three generations of fermions emerge from the three independent tape directions; the specific charge assignments follow from the number-theoretic structure of the Z_7 symmetry group.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.20683523">Zenodo (PDF + DOI)</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.21328706">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
@@ -1620,7 +1596,7 @@ These results establish a coherent group-theoretic skeleton: PSL(2,7) contains F
   <p class="abs-entry-title">Computational Universality of the Substrate: Undecidability, Self-Reference, and Why the Universe Can&#x27;t Know Itself Completely</p>
   <p class="abs-descriptor">Proves that the computational universality of the GTE substrate implies undecidability and fundamental limits on self-knowledge within the universe.</p>
   <p class='abs-text'>The substrate of the universe is computationally universal — it can, in principle, simulate any computation. This is not just a philosophical claim but a theorem derived in the GTE framework: the GTE polynomial, via its invariant Rule 110 sub-automaton, is Turing-complete (machine-certified in Lean 4, zero sorry). Computational universality has profound consequences: any sufficiently rich physical system is subject to undecidability and Godel incompleteness. This tutorial explains what computational universality means for physics, how Turing completeness is established for the GTE substrate, and why it implies that the universe cannot have a complete self-description within itself — a result directly connected to the PSC (Perfect Self-Containment) principle and to the Transputation theorem placing quantum measurement at Turing degree 0&#x27;.</p>
-  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.20734733">Zenodo (PDF + DOI)</a></p>
+  <p class="abs-links"><a href="https://doi.org/10.5281/zenodo.21239882">Zenodo (PDF + DOI)</a></p>
   <a href="#abs-toc" class="back-top">↑ Back to top</a>
 </div>
 
